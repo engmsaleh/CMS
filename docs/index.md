@@ -1,3 +1,7 @@
+---
+ layout: default
+---
+
 ##Shovel apps Panel
 
 **Shovel apps panel** is a small full stack hybrid app. It's a mobile oriented web app with a backend panel that allows you to configure the app frontend and backend services. From the panel, you can request Shovel apps platform for a mobile app for iOS 7.x , Windows Phone 8.x and Android 4.x platforms.

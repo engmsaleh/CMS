@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Shovel Panel - My App </title>
+    <link rel="icon" type="image/png" href="img/icon.png" />
+    <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.themes.min.css">
+    <link rel="stylesheet" href="lib/ionicons/css/ionicons.css">
+    
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body class="theme-pink layout-dark">
+    
+    <div class="statusbar-overlay"></div>
+    
+    <div class="panel-overlay"></div>
+    
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        <p>Left panel content goes here</p>
+      </div><!--.content-block-->
+      <div class="list-block">
+        <ul>
+          <li>
+            <a href="#view-plugins" class="close-panel tab-link item-link">
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Plugins</div>
+                </div><!--.item-inner-->
+              </div><!--.item-content-->
+            </a>
+          </li>        
+          <li>
+            <a href="#view-plugins" class="close-panel item-link">
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Backend Services</div>
+                </div><!--.item-inner-->
+              </div><!--.item-content-->
+            </a>
+          </li>
+          <li>
+            <a href="about.html" class="close-panel item-link">
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Users</div>
+                </div><!--.item-inner-->
+              </div><!--.item-content-->
+            </a>
+          </li>          
+        </ul>
+      </div> <!--.list-block-->     
+    </div><!--.panel-->
+      
+    <div class="panel panel-right panel-cover">
+      <div class="content-block">
+        <p>Right panel content goes here</p>
+      </div><!--.content-block-->
+    </div> <!--.panel-->
+        
+    <div class="views tabs toolbar-through">
+      
+      <div id="view-1" class="view view-main tab active">
+        <div class="navbar ">
+          <div class="navbar-inner">
+          <div class="left">
+            <a href="#" class="link icon-only open-panel">
+                <i class="icon ion-navicon-round"></i>
+            </a>
+          </div>            
+            <div class="center sliding">Shovel apps Admin Panel</div>
+          </div>
+        </div>
+        <div class="pages navbar-through">
+          
+          <div data-page="index-1" class="page">
+            
+            <div class="page-content">
+              <div class="content-block-title">Welcome to your app panel</div>
+              <div class="content-block">
+                <p>This is an example of tab bar application layout. The main point of such tabbed layout is that each tab contains independent view with its own routing and navigation.</p>
+                  <p>Each tab/view may have different layout, different navbar type (dynamic, fixed or static) or without navbar like this tab.</p>
+                    <p>And of course, your favorite panels are still here: <a href="#" class="open-panel">left</a> and <a href="#" data-panel="right" class="open-panel">right</a></p>
+                    <p>Icons and their labels in tab bar below are just for example and don't related to their content.</p>
+              </div><!--.content-block-->
+            </div><!--.page-content-->
+          </div><!--.page-->
+        </div><!--.pages-->
+      </div><!-- .view .tab .view-main --> 
+            
+      <div id="view-plugins" class="view tab">
+        
+        <div class="navbar ">
+          <div class="navbar-inner">
+          <div class="left">
+            <a href="#" class="link icon-only open-panel">
+                <i class="icon ion-navicon-round"></i>
+            </a>
+          </div>            
+            <div class="center sliding">Shovel apps plugins</div>
+          </div>
+        </div>
+        <div class="pages navbar-through">
+          <div data-page="index-2" class="page">
+            <div class="page-content">
+              <div class="content-block">
+                <p>This app has no active plugins</p>
+              </div>
+              <div class="list-block">
+                <ul>
+
+                  <li>
+                    <a href="about.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Shovel app chat</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="services.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Shovel Apps Form</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="services.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Shovel Apps Push notifications</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>                              
+                </ul>
+              </div><!--.list-block-->
+            </div><!--.page-content-->
+          </div><!-- .page -->
+        </div><!-- .pages -->
+      </div><!--.view .tab -->
+      <div id="view-3" class="view tab">
+        <div class="navbar ">
+          <div class="navbar-inner">
+          <div class="left">
+            <a href="#" class="link icon-only open-panel">
+                <i class="icon ion-navicon-round"></i>
+            </a>
+          </div>            
+            <div class="center sliding">Shovel apps platform</div>
+          </div>
+        </div>
+        <div class="pages navbar-through">
+          <div data-page="index-3" class="page">
+            <div class="page-content">
+              <div class="content-block-title">Shovel apps building services</div>
+              <div class="content-block">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel commodo massa, eu adipiscing mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus ultricies dictum neque, non varius tortor fermentum at. Curabitur auctor cursus imperdiet. Nam molestie nisi nec est lacinia volutpat in a purus. Maecenas consectetur condimentum viverra. Donec ultricies nec sem vel condimentum. Phasellus eu tincidunt enim, sit amet convallis orci. Vestibulum quis fringilla dolor. </p>
+                  <p>Mauris commodo lacus at nisl lacinia, nec facilisis erat rhoncus. Sed eget pharetra nunc. Aenean vitae vehicula massa, sed sagittis ante. Quisque luctus nec velit dictum convallis. Nulla facilisi. Ut sed erat nisi. Donec non dolor massa. Mauris malesuada dolor velit, in suscipit leo consectetur vitae. Duis tempus ligula non eros pretium condimentum. Cras sed dolor odio.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel commodo massa, eu adipiscing mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus ultricies dictum neque, non varius tortor fermentum at. Curabitur auctor cursus imperdiet. Nam molestie nisi nec est lacinia volutpat in a purus. Maecenas consectetur condimentum viverra. Donec ultricies nec sem vel condimentum. Phasellus eu tincidunt enim, sit amet convallis orci. Vestibulum quis fringilla dolor. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--.view .tab-->
+      <div id="view-4" class="view tab">
+        <div class="pages navbar-through">
+          <div class="page">
+            <div class="navbar ">
+              <div class="navbar-inner">
+              <div class="left">
+                <a href="#" class="link icon-only open-panel">
+                    <i class="icon ion-navicon-round"></i>
+                </a>
+              </div>            
+                <div class="center sliding">App settings</div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="content-block-title">General settings</div>
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"></div>
+                      <div class="item-inner">
+                        <div class="item-title label">App Name</div>
+                        <div class="item-input">
+                          <input type="text" placeholder="Your app's name">
+                        </div><!--.item-input-->
+                      </div><!--.item-inner-->
+                    </div><!--.item-content-->
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"></div>
+                      <div class="item-inner">
+                        <div class="item-title label">App current version</div>
+                        <div class="item-input">
+                          <input type="text" placeholder="0.0.1">
+                        </div><!--.item-input-->
+                      </div><!--.item-inner-->
+                    </div><!--.item-content-->
+                  </li>                                  
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"></div>
+                      <div class="item-inner">
+                        <div class="item-title label">App Icon</div>
+                        <div class="item-input">
+                          <input type="text" placeholder="Icon URL">
+                        </div><!--.item-input-->
+                      </div><!--.item-inner-->
+                    </div><!--.item-content-->
+                  </li>
+                  <!-- Additional "align-top" class for correct textarea alignment -->
+                  <li class="align-top">
+                    <div class="item-content">
+                      <div class="item-media"></div>
+
+                      <div class="item-inner">
+                        <div class="item-title label">Description</div>
+                        <div class="item-input">
+                            <textarea></textarea>
+                        </div><!--.item-input-->
+                      </div><!--.item-inner-->
+                    </div><!--.item-content-->
+                  </li>                                  
+                </ul>
+              </div><!-- .list-block-->
+              <div class="content-block-title">Mobile build settings</div>
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"></div>
+                      <div class="item-inner">
+                        <div class="item-title label">iOS key</div>
+                        <div class="item-input">
+                          <input type="text" placeholder="iOS key">
+                        </div><!--.item-input-->
+                      </div><!--.item-inner-->
+                    </div><!--.item-content-->
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"></div>
+                      <div class="item-inner">
+                        <div class="item-title label">Windows Phone key</div>
+                        <div class="item-input">
+                          <input type="text" placeholder="Windows Phone key">
+                        </div><!--.item-input-->
+                      </div><!--.item-inner-->
+                    </div><!--.item-content-->
+                  </li>                                  
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"></div>
+                      <div class="item-inner">
+                        <div class="item-title label">Android Key</div>
+                        <div class="item-input">
+                          <input type="text" placeholder="Android Key">
+                        </div><!--.item-input-->
+                      </div><!--.item-inner-->
+                    </div><!--.item-content-->
+                  </li>
+                  <li>
+                    <div class="item-content disabled">
+                      <div class="item-media"></div>
+                      <div class="item-inner">
+                        <div class="item-title label">Build system</div>
+                        <div class="item-input">
+                          <select>
+                            <option>ShovelApps Build</option>
+                            <option>Phonegap Build</option>
+                          </select>
+                        </div><!--.item-input-->
+                      </div><!--.item-inner-->
+                    </div><!--.item-content-->
+                  </li>
+                  <li>
+                    <div class="item-content disabled">
+                      <div class="item-media"></div>
+                      <div class="item-inner">
+                        <div class="item-title label">Build framework</div>
+                        <div class="item-input">
+                          <select>
+                            <option>Phonegap 3.5.0</option>
+                            <option>Ionic Framework</option>
+                          </select>
+                        </div><!--.item-input-->
+                      </div><!--.item-inner-->
+                    </div><!--.item-content-->
+                  </li>                                  
+                </ul>
+              </div><!--.list-block-->
+
+
+            </div> <!--.page-content-->
+          </div> <!-- .page-->
+        </div> <!-- .pages-->
+      </div> <!-- .view .tab-->
+                  
+      <div class="toolbar tabbar tabbar-labels">
+        <div class="toolbar-inner">
+          <a href="#view-1" class="tab-link active">
+            <i class="icon ion-android-information"></i>
+            <span class="tabbar-label">Information</span>
+          </a>
+          
+          <a href="#view-plugins" class="tab-link">
+            <i class="icon ion-android-inbox"></i>
+            <span class="tabbar-label">Plugins</span>
+          </a>
+
+          <a href="#view-4" class="tab-link">
+            <i class="icon ion-camera"></i>
+            <span class="tabbar-label">App settings</span>
+          </a>
+          <a href="#view-3" class="tab-link">
+            <i class="icon ion-ios7-cloud-upload-outline">
+            </i>
+            <span class="tabbar-label">Publish</span>
+          </a>
+        </div><!--toolbar-inner-->
+      </div> <!--toolbar-->
+    </div><!--.views-->
+        
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="shovelapps/rivetsjs/rivets.bundled.min.js"></script>
+    <script type="text/javascript" src="shovelapps/shovelapps.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>

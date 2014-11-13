@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+    
+    <link rel="stylesheet" href="assets/lib/framework7/css/framework7.min.css">
+    <link rel="stylesheet" href="assets/lib/framework7/css/framework7.themes.min.css">
+    <link rel="stylesheet" href="assets/lib/ionicons/css/ionicons.css">
+    <link rel="icon" type="image/png" href="assets/icon.png" />
+     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300|Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="assets/app.css">
+  </head>
+  <body  class="theme-pink layout-white">
+
+    <status-overlay></status-overlay>
+
+    <panel-overlay></panel-overlay>
+
+    <panel-left>
+      <view>
+        <navbar>
+      
+          <navbar-title >Menu</navbar-title>
+        </navbar>      
+        <page>
+          <list-block>
+            <li>
+              <a href="#view-1" class="close-panel tab-link item-link">
+                <item-content>
+                    <item-title>Information</item-title>
+                </item-content>
+              </a>
+            </li>
+            <li>
+              <a href="#view-2" class="close-panel tab-link item-link">
+                <item-content>
+                    <item-title>News</item-title>
+                </item-content>
+              </a>
+            </li>
+            <li>
+              <a href="#view-3" class="close-panel tab-link item-link">
+                <item-content>
+                    <item-title>Social</item-title>
+                </item-content>
+              </a>
+            </li>
+            <li>
+              <a href="#view-4" class="close-panel tab-link item-link">
+                <item-content>
+                    <item-title>Contact</item-title>
+                </item-content>
+              </a>
+            </li>
+               
+            <admin-links-divider></admin-links-divider>
+            <admin-panel-link></admin-panel-link>
+          </list-block>
+        </page>
+      </view>
+    </panel-left>
+    
+    <panel-right></panel-right>
+
+    <popup data-popup-visible id="popup">
+      <h1 style="text-align:center">Shovel apps</h1>
+      <h3 style="text-align:center">Welcome to your first app</h3>
+
+      <p style="text-align:center"><a href="#" class="close-popup">Close welcome screen</a></p>
+      <p style="text-align:center">
+        <img src="assets/icon.png" style="max-width:100%">
+      </p>
+    </popup>
+    <views>
+
+      <main-tab-view id="view-1">
+        <navbar>
+          <div class="left">
+            <a href="#" class="link icon-only open-panel">
+                <i class="icon ion-navicon-round"></i>
+            </a>
+          </div>        
+          <navbar-title data-binded>Shovel apps - {app.title}</navbar-title>
+        </navbar>
+        <pages>
+          <page>
+            <content-block-title>This is your first page</content-block-title>
+            <content-block>
+              <content-block-inner>
+                <p><a href="#" class="button button-round">Build this app for android</a></p>
+                <p><a href="#" class="button button-round disabled">Build for Windows Phone</a></p>
+
+              </content-block-inner>
+            </content-block>
+            <admin-links-content-block></admin-links-content-block>
+
+          </page>
+        
+        </pages>
+      </main-tab-view>
+      <tab-view id="view-2">
+        <navbar>
+          <div class="left">
+            <a href="#" class="link icon-only open-panel">
+                <i class="icon ion-navicon-round"></i>
+            </a>
+          </div>        
+          <navbar-title>News</navbar-title>
+        </navbar>
+        <pages>
+          <page>
+            <content-block-title>Welcome to view 2</content-block-title>
+            <content-block>
+              <content-block-inner>
+              </content-block-inner>
+            </content-block>
+            <shovelapps-wordpress-api></shovelapps-wordpress-api>
+          </page>
+        </pages>    
+       </tab-view>
+      <tab-view id="view-3">
+        <navbar>
+          <div class="left">
+            <a href="#" class="link icon-only open-panel">
+                <i class="icon ion-navicon-round"></i>
+            </a>
+          </div>        
+          <navbar-title>Social</navbar-title>
+        </navbar>      
+        <pages>
+          <page>
+            <content-block-title>Welcome to view 3</content-block-title>
+            <content-block>
+              <content-block-inner>
+              </content-block-inner>
+            </content-block>
+          </page>
+        </pages> 
+      </tab-view>
+      <tab-view id="view-4">
+        <navbar>
+          <div class="left">
+            <a href="#" class="link icon-only open-panel">
+                <i class="icon ion-navicon-round"></i>
+            </a>
+          </div>        
+          <navbar-title>Contact</navbar-title>
+        </navbar>      
+        <pages>
+          <page>
+            <content-block-title>Contact the author</content-block-title>
+            <list-block>
+              <li>
+                  <div class="item-content">
+                      <div class="item-inner">
+                      <div class="item-title label">Your email</div>
+                    <div class="item-input">
+                    <input type="email" placeholder="Your email">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="align-top">
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title label">Message</div>
+                    <div class="item-input">
+                      <textarea placeholder="Your message"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </li>                
+              <li>
+                <a class="list-button item-link active">Send</a>
+              </li>
+            </list-block>
+            <content-block>
+              <content-block-inner>
+                We'll contact you as soon as possible.
+              </content-block-inner>
+            </content-block>
+            <list-block data-binded>
+              <li class="item-divider">About this app</li>         
+              <li>
+                <a href="/admin" class="disabled external item-link">
+                  <item-content>
+                      <item-title>Download {app.title} from Google Play Store</item-title>
+                  </item-content>
+                </a>
+              </li>    
+              <li>
+                <a href="/admin" class="disabled external item-link">
+                  <item-content>
+                      <item-title>Download {app.title} from App Store</item-title>
+                  </item-content>
+                </a>
+              </li>  
+            </list-block>
+          </page>
+        </pages> 
+      </tab-view>
+      <app-page id="new">
+        
+      </app-page> 
+      <tabbar>
+        <tab-link href="#view-1"><i class="icon ion-android-information"></i><span class="tabbar-label">Information</span></tab-link>
+        <tab-link href="#view-2"><i class="icon ion-android-information"></i><span class="tabbar-label">News</span></tab-link>
+        <tab-link href="#view-3"><i class="icon ion-android-information"></i><span class="tabbar-label">Social</span></tab-link>
+        <tab-link href="#view-4"><i class="icon ion-android-information"></i><span class="tabbar-label">Contact</span></tab-link>
+        <tab-link href="#new"><i class="icon ion-android-information"></i><span class="tabbar-label">Help</span></tab-link>
+      </tabbar>
+    </views>
+    <script type="text/custom-elements">
+      <custom-element name="app-page">
+        <tab-view >
+          <navbar>
+            <div class="left">
+              <a href="#" class="link icon-only open-panel">
+                  <i class="icon ion-navicon-round"></i>
+              </a>
+            </div><!--.left-->
+            <navbar-title>Help</navbar-title>
+          </navbar>
+          <pages>
+            <page>
+              <content-block-title>Shovel apps Panel help</content-block-title>
+              <content-block>
+                <content-block-inner>
+                  {{content}}
+                </content-block-inner>
+              </content-block>
+            </page>
+          </pages>    
+         </tab-view>        
+      </custom-element>  
+      <custom-element name="navbar">
+        <div class="navbar">
+          <div class="navbar-inner">
+            {{content}}
+          </div><!--.navbar-inner-->
+        </div><!--.navbar-->
+      </custom-element>
+      <custom-element name="navbar-title">
+        <div class="center sliding">
+          {{content}}
+        </div><!--.center.sliding-->
+      </custom-element>
+      <custom-element name="views">
+        <div class="views tabs toolbar-through">
+          {{content}}
+        </div> <!--.views-->
+      </custom-element> 
+      <custom-element name="pages">
+        <div class="pages navbar-through">
+          {{content}}
+        </div><!--.pages-->
+      </custom-element>  
+      <custom-element name="page">
+        <div class="page">
+          <div class="page-content">
+            {{content}}
+          </div><!--.page-content-->
+        </div><!--.page-->
+      </custom-element>  
+      <custom-element name="view">
+        <div class="view">
+          {{content}}
+        </div> <!--.view-->
+      </custom-element> 
+      <custom-element name="tab-view">
+        <div class="view tab">
+          {{content}}
+        </div> <!--.view.tab-->
+      </custom-element> 
+      <custom-element name="main-tab-view">
+        <div class="view tab active view-main">
+          {{content}}
+        </div><!--.view.tab.view-main-->
+      </custom-element> 
+      <custom-element name="status-overlay">
+        <div class="statusbar-overlay"></div>
+      </custom-element> 
+      <custom-element name="panel-overlay">
+        <div class="panel-overlay"></div>
+      </custom-element>                          
+      <custom-element name="panel-left">
+        <div class="panel panel-left panel-reveal">
+          {{content}}
+        </div><!--.panel.panel-left.panel-reveal-->
+      </custom-element>                                
+      <custom-element name="panel-right">
+        <div class="panel panel-right panel-cover">
+          {{content}}
+          </div><!--.panel.panel-right.panel-cover-->
+      </custom-element>
+      <custom-element name="content-block">
+        <div class="content-block">
+          {{content}}
+        </div>
+      </custom-element>
+      <custom-element name="content-block-title">
+        <div class="content-block-title">
+          {{content}}
+        </div><!--content-block-title-->
+      </custom-element>
+      <custom-element name="content-block-inner">
+        <div class="content-block-inner">
+          {{content}}
+        </div><!--content-block-inner-->
+      </custom-element>
+      <custom-element name="list-block">
+        <div class="list-block">
+          <ul>
+            {{content}}
+          </ul>
+        </div><!--.list-block-->
+      </custom-element>
+      <custom-element name="tabbar">
+       <div class="toolbar tabbar tabbar-labels">
+          <div class="toolbar-inner">
+            {{content}}
+          </div><!--.toolbar-inner-->
+        </div><!--tollbar.tabbar.tabar-levels-->
+      </custom-element>
+      <custom-element name="tab-link">
+        <a class="tab-link">
+          {{content}}
+        </a>
+      </custom-element>  <!--.tab-link--> 
+      <custom-element name="item-content">
+        <div class="item-content">
+          <div class="item-inner">
+            {{content}}
+          </div><!--.item-inner-->
+        </div><!--.item-content-->
+      </custom-element>  <!--.item-content-->
+      <custom-element name="item-title">
+        <div class="item-title">
+          {{content}}
+        </div><!--.item-title-->
+      </custom-element>
+      <custom-element name="popup">
+        <div class="popup tablet-fullscreen">
+          <div class="content-block">
+            {{content}}
+          </div><!--.contenttablet-fullscreen-block-->
+        </div><!--.popup-->
+      </custom-element>
+    </script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="assets/lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="shovelapps/rivetsjs/rivets.bundled.min.js"></script>
+    <script type="text/javascript" src="shovelapps/shovelapps.js"></script>
+    <script type="text/javascript" src="assets/app.js"></script>
+  </body>
+</html>
