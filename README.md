@@ -35,7 +35,7 @@ You could think about Shovelapps CMS as _A pluggable CMS frontend and backend fo
 
 In brief
 
-* As soon as you `npm start` you get a mobile, responsive iOS7 look-alike web app at `http://localhost:300`. * This is how you final mobile app looks like*
+* As soon as you `npm start` you get a mobile, responsive iOS7 look-alike web app at `http://localhost:3000`. * This is how you final mobile app looks like*
 * This web app can compile itself to an hybrid mobile app using Shovel apps platform backend service transparently. 
  * This app uses a local backend (`http://localhost:3000/admin`) for its own config and resources.
  * This app gives you access to a building system that lets you download this app as a mobile binary.
